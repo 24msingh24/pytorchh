@@ -1,11 +1,8 @@
 #!/bin/bash 
-#SBATCH --job-name=test
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=16
-#SBATCH --mem=32G
+#SBATCH --job-name=task2
+#SBATCH --mail-type=All
+#SBATCH --mail-user=manandeep.singh@uqconnect.edu.au
 #SBATCH --partition=vgpu
 #SBATCH --gres=gpu:1
 
-source /manan/bin/activate /home/Student/s4823925/manan
-python task2.py
+python ~/pytorchh/task2.py
