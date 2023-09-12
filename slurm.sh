@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=8G
-#SBATCH --partition=vgpu20
+#SBATCH --partition=vgpu
 #SBATCH --gres=gpu:1
 
 source activate /home/Student/s4823925/manan  
