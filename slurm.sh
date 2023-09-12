@@ -1,8 +1,11 @@
 #!/bin/bash 
-#SBATCH --job-name=manan_CIFAR
-#SBATCH --mail-type=All
-#SBATCH --mail-user=manandeep.singh@uqconnect.edu.au
-#SBATCH --partition=vgpu
+#SBATCH --job-name=test
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=32G
+#SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
 
-python ~/pytorchh/task2.py
+source /manan/bin/activate /home/Student/s4823925/manan
+python task2.py
